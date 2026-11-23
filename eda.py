@@ -15,7 +15,7 @@ category_hours = data.groupby(
     "project_category"
 )["hours_spent"].mean().sort_values()
 
-category_hours.plot(kind="br")
+category_hours.plot(kind="bar")
 
 plt.title("Average houres by project category")
 plt.xlabel("project category")
